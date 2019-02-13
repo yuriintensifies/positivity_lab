@@ -8,7 +8,7 @@
 
 
 // Points.
-var posArray = new new google.maps.MVCArray(), negArray=new google.maps.MVCArray();
+var posArray = new Array(), negArray=new MVCArray();
 
 // Gradients.
 var posGradient, negGradient;
