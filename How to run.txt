@@ -1,0 +1,3 @@
+just run assign_area_score.py, it will do everything from processing the tweets to outputting the data.js file.
+
+Then simply open index.html for the visualization.
