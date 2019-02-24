@@ -1,3 +1,7 @@
 just run assign_area_score.py, it will do everything from processing the tweets to outputting the data.js file.
 
 Then simply open index.html for the visualization.
+
+build classifier: processes tweets, builds classifier.
+classify tweets: makes a prediction for class of each tweet.
+assign area score: outputs js files after assigning score to each area.
