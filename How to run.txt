@@ -1,4 +1,5 @@
-just run assign_area_score.py, it will do everything from processing the tweets to outputting the data.js file.
+1. Put the entire data folder inside the project directory  
+2. just run assign_area_score.py, it will do everything from processing the tweets to outputting the data.js file.
 
 Then simply open index.html for the visualization.
 
