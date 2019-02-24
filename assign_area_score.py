@@ -12,6 +12,7 @@ for val in tweets_classified:
     if not (val[2] == curlat and val[3] == curlong):
         curlat = float(curlat) + 0.025
         curlong = float(curlong) + 0.025
+        #I use a sigmoid function since it ranges from 0 to 1
         area_scores[(curlat, curlong)] = sigmoid((poscount - negcount) / (poscount + negcount + 0.001)/(1+ntrcount*0.2))
         curlat = val[2]
         curlong = val[3]
@@ -25,8 +26,6 @@ for val in tweets_classified:
     elif val[1] == 2:
         ntrcount += 1
 del area_scores[(0.025, 0.025)]
-
-print(area_scores)
 
 prejson = []
 for area, score in area_scores.items():
